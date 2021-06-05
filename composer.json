@@ -1,1 +1,30 @@
 
+{
+    "name": "srm/api",
+    "authors": [
+        {
+            "name": "Nazmul Islam",
+            "email": "nazmul.islam@icloud.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+           
+            "composer dump-autoload -o"
+        ],
+        "post-update-cmd": [
+            "composer dump-autoload -o"
+        ]
+    },
+    "require": {
+      
+    },
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "GetLaunched\\": "src/"
+        }
+    }
+}
